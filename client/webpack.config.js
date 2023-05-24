@@ -17,14 +17,14 @@ module.exports = () => {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
-   
+
     plugins: [
-       // Webpack plugin that generates our html file and injects our bundles. 
-       new HtmlWebpackPlugin({
+      // Webpack plugin that generates our html file and injects our bundles. 
+      new HtmlWebpackPlugin({
         template: './index.html',
         title: 'Text Editor'
       }),
-     
+
       // Injects our custom service worker
       new InjectManifest({
         swSrc: './src-sw.js',
@@ -35,13 +35,13 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Text Editoe',
+        name: 'Text Editor',
         short_name: 'Editor',
         description: 'Just another text editor!',
         background_color: '#225ca3',
         theme_color: '#225ca3',
-        start_url: './',
-        publicPath: './',
+        start_url: '/',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
@@ -71,7 +71,7 @@ module.exports = () => {
             },
           },
         },
-        
+
       ],
     },
   };
