@@ -3,7 +3,7 @@
 
 ## Description
 
-- "JATE" is a  progressive web application text editor thatmeets the PWA criteria. The app runs in the browser, but can also be installed and downloaded on devices so users have the option to use it outside of the browser, The app also gets and stores data on an indexedDB database.
+- "JATE" is a  progressive web application text editor that meets the PWA criteria. The app runs in the browser, but can also be installed and downloaded on devices so users have the option to use it outside of the browser, The app also gets and stores data on an indexedDB database.
 
 -
 
